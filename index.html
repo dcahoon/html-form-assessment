@@ -11,10 +11,40 @@
 <main>
 
 <div>
-    
+    <form action="send-email.js" method="post">
+        
+        <div class="field">
+            <div>
+                <label for="name">Name:</label>
+            </div>
+            <div>
+            <input type="text" name="name" id="name"> 
+            </div>
+        </div>
 
+        <div class="field">
+            <div>
+                <label for="email">Email Address:</label>
+            </div>
+            <div>
+                <input type="email" id="email" name="email">
+            </div>
+        </div>
 
+        <div class="field">
+            <div>
+                <label for="message">Message:</label>
+            </div>
+            <div>
+                <textarea name="message" id="message" rows="10" placeholder="Enter your message here..."></textarea>
+            </div >
+        </div>
 
+        <div class="field submit-button">
+            <button type="submit">Submit</button>
+        </div>
+        
+    </form>
 </div>
 
 </main>
